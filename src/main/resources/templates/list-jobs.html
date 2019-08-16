@@ -9,6 +9,7 @@
 <div class="container body-content">
 
     <h1 th:text="${#strings.capitalizeWords(title)}"></h1>
+    <h3 th:text="${size}"></h3>
     <table th:each="job:${jobs}">
         <tr th:each="map:${job}">
             <td th:text="${map.key}" ></td>
